@@ -29,7 +29,7 @@ data = pd.DataFrame({
 st.sidebar.header("Filters")
 selected_months = st.sidebar.multiselect("Select Months", months,
                                          default=months)
-show_expenses = st.sidebar.checkbox("Show Expenses", value=True)
+show_expenses = st.sidebar.checkbox("Show Expenses", value=False)
 
 # Filter data
 filtered_data = data[data["Month"].isin(selected_months)]
